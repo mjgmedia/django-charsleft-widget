@@ -61,7 +61,7 @@ class CharsLeftInput(forms.TextInput):
         """ % {
             'attrs': flatatt(final_attrs),
             'current': current,
-            'char_remain_str': _(u'characters remaining'),
+            'char_remain_str': _(u'znaków z '),
             'maxlength': int(maxlength),
         }
         return mark_safe(html)
