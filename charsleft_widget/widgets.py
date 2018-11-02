@@ -44,7 +44,7 @@ class CharsLeftInput(forms.TextInput):
             final_attrs = self.build_attrs(attrs, extra_attrs=extra_attrs)
 
         if value != '':
-            final_attrs['value'] = force_str(self._format_value(value))
+            final_attrs['value'] = force_str(self.format_value(value))
 
         maxlength = final_attrs.get('maxlength', False)
         if not maxlength:
