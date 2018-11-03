@@ -53,7 +53,7 @@ class CharsLeftInput(forms.TextInput):
         current = force_str(int(maxlength) - len(value))
         html = u"""
             <span class="charsleft charsleft-input">
-            <input %(attrs)s />
+            <input %(attrs)s class="textinput textInput form-control" />
             <span>
                 <span class="count">%(current)s</span> %(char_remain_str)s</span>
                 <span class="maxlength">%(maxlength)s</span>
