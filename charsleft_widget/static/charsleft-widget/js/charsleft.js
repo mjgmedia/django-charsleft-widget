@@ -38,5 +38,5 @@
       'dest':".count",
     });
   });
-})(django.jQuery);
+})(jQuery);
 
